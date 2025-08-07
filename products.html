@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISION EXPERT - Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="product-page">
+
+  <!-- ===== Header ===== -->
+  <header id="main-header">
+  <div class="container">
+    <div class="logo">VISION <span>EXPERT</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <!-- <a href="#gallery">Gallery</a> -->
+      <!-- <a href="#testimonials">Reviews</a> -->
+      <a href="#contact">Contact</a>
+      <a href="cart.html" class="cart-link">
+  🛒 Cart <span id="cart-count">(0)</span>
+</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- ===== Product Section ===== -->
+  <section class="products">
+  <h2 class="section-title">Explore Our Eyewear Collection</h2>
+
+  <!-- Category Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="filterProducts('all')">All</button>
+    <button class="tab" onclick="filterProducts('male')">Male</button>
+    <button class="tab" onclick="filterProducts('female')">Female</button>
+    <button class="tab" onclick="filterProducts('kids')">Kids</button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid">
+
+    <div class="product-card" data-category="male">
+      <img src="images/glass1.jpeg" alt="Black Frame" />
+      <h3>Stylish Black Frame (Male)</h3>
+      <p>₹1,299</p>
+      <button class="add-to-cart" data-id="101" data-name="Stylish Black Frame" data-price="1,299" data-img="images/glass1.jpeg">
+    Add to Cart
+  </button>
+      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card" data-category="female">
+      <img src="images/glass2.jpeg" alt="Transparent Frame" />
+      <h3>Transparent Frame (Female)</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" data-id="103" data-name="Transparent Frame (Female)" data-price="1,499" data-img="images/glass2.jpeg">
+    Add to Cart
+  </button>
+      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
+      
+    </div>
+
+    <div class="product-card" data-category="kids">
+      <img src="images/glass3.jpeg" alt="Kids Retro Frame" />
+      <h3>Retro Round Glass (Kids)</h3>
+      <p>₹1,099</p>
+      <button class="add-to-cart" data-id="104" data-name="Retro Round Glass (Kids)" data-price="1,099" data-img="images/glass2.jpeg">
+    Add to Cart
+  </button>
+      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <!-- More examples -->
+    <div class="product-card" data-category="male">
+      <img src="images/glass2.jpeg" alt="Brown Male Frame" />
+      <h3>Classic Brown Frame</h3>
+      <p>₹1,399</p>
+      <button class="add-to-cart" data-id="105" data-name="Classic Brown Frame" data-price="1,399" data-img="images/glass2.jpeg">
+    Add to Cart
+  </button>
+      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Classic Brown Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card" data-category="female">
+      <img src="images/glass3.jpeg" alt="Pink Female Frame" />
+      <h3>Elegant Pink Frame</h3>
+      <p>₹1,599</p>
+      <button class="add-to-cart" data-id="105" data-name="Elegant Pink Frame" data-price="1,599" data-img="images/glass2.jpeg">
+    Add to Cart
+  </button>
+      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Elegant Pink Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>VISION EXPERT</h3>
+    <p>Your Trusted Eyewear Partner</p>
+
+    <div class="footer-info">
+      <p><strong>Address:</strong> 12 Main Market, Lajpat Nagar, New Delhi - 110024</p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+      <p><strong>Email:</strong> support@visionexpert.in</p>
+      <p><strong>Timings:</strong> Mon-Sat | 10:00 AM - 8:00 PM</p>
+    </div>
+
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p class="copyright">
+      &copy; 2025 VISION EXPERT. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
