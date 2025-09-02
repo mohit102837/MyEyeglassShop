@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Vision Expert</title>
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .navbar a{
+        color: black    ;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header id="main-header">
+  <div class="container">
+    <div class="logo">VISION <span>EXPERT</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">
+  🛒 Cart <span id="cart-count">(0)</span>
+</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="checkout-container">
+    <h2>Checkout</h2>
+
+    <!-- Cart Summary -->
+    <section class="cart-summary">
+      <h3>Your Order</h3>
+      <table id="checkoutCart">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS se fill hoga -->
+        </tbody>
+      </table>
+      <p class="total">Total: ₹<span id="checkoutTotal">0</span></p>
+    </section>
+
+    <!-- Customer Details -->
+    <section class="checkout-form">
+      <h3>Billing Details</h3>
+      <form id="orderForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="address" placeholder="Full Address" required></textarea>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Vision Expert. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

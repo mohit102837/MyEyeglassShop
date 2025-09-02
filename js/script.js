@@ -162,7 +162,7 @@ function renderCart() {
       </table>
       <div class="cart-total">
         <h3>Total Amount: ₹${total}</h3>
-        <button class="checkout-btn">Proceed to Checkout</button>
+        <button class="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
       </div>
     </div>
   `;
@@ -180,3 +180,8 @@ function removeFromCart(index) {
 
 // Initial render
 renderCart();
+
+
+
+
+
