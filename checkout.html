@@ -32,39 +32,95 @@
   </div>
 </header>
 
-  <main class="checkout-container">
-    <h2>Checkout</h2>
+  <!-- checkout.html (sirf main part) -->
+<main class="checkout-page">
+  <section class="appointment-box">
+    <h2>Book Appointment for Eye Test</h2>
+    <p class="appointment-subtitle">
+      Choose your preferred date & time for an eye test. You can also request home delivery for your glasses.
+    </p>
 
-    <!-- Cart Summary -->
-    <section class="cart-summary">
-      <h3>Your Order</h3>
-      <table id="checkoutCart">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Qty</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- JS se fill hoga -->
-        </tbody>
-      </table>
-      <p class="total">Total: ₹<span id="checkoutTotal">0</span></p>
-    </section>
+    <form id="appointment-form">
+      <!-- Name -->
+      <div class="form-row">
+        <label for="cust-name">Full Name</label>
+        <input type="text" id="cust-name" required placeholder="Enter your full name">
+      </div>
 
-    <!-- Customer Details -->
-    <section class="checkout-form">
-      <h3>Billing Details</h3>
-      <form id="orderForm">
-        <input type="text" id="name" placeholder="Full Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="address" placeholder="Full Address" required></textarea>
-        <input type="tel" id="phone" placeholder="Phone Number" required>
-        <button type="submit" class="btn">Place Order</button>
-      </form>
-    </section>
-  </main>
+      <!-- Phone -->
+      <div class="form-row">
+        <label for="cust-phone">Mobile Number</label>
+        <input type="tel" id="cust-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number">
+      </div>
+
+      <!-- Date -->
+      <div class="form-row">
+        <label for="appt-date">Preferred Date</label>
+        <input type="date" id="appt-date" required>
+      </div>
+
+      <!-- Time Slot -->
+      <div class="form-row">
+        <label for="appt-slot">Time Slot</label>
+        <select id="appt-slot" required>
+          <option value="">Select a time slot</option>
+          <option>10:00 AM – 11:00 AM</option>
+          <option>11:00 AM – 12:00 PM</option>
+          <option>01:00 PM – 02:00 PM</option>
+          <option>02:00 PM – 03:00 PM</option>
+          <option>04:00 PM – 05:00 PM</option>
+        </select>
+      </div>
+
+      <!-- Reason -->
+      <div class="form-row">
+        <label for="appt-reason">Reason for Eye Test</label>
+        <select id="appt-reason" required>
+          <option value="">Select reason</option>
+          <option>Routine eye checkup</option>
+          <option>Headache / eye strain</option>
+          <option>Blurry or unclear vision</option>
+          <option>New glasses / change in power</option>
+          <option>Doctor recommendation</option>
+        </select>
+      </div>
+
+      <!-- Home delivery -->
+      <div class="form-row checkbox-row">
+        <label>
+          <input type="checkbox" id="home-delivery">
+          I also want home delivery of my glasses after the test
+        </label>
+      </div>
+
+      <!-- Address (show only if checkbox checked) -->
+      <div class="form-row" id="address-row" style="display:none;">
+        <label for="delivery-address">Delivery Address</label>
+        <textarea id="delivery-address" placeholder="House no., Street, Area, City, Pincode"></textarea>
+      </div>
+
+      <!-- Payment method (demo) -->
+      <div class="form-row">
+        <label for="payment-method">Payment Method (Demo)</label>
+        <select id="payment-method" required>
+          <option value="">Select payment method</option>
+          <option>Pay at store after test</option>
+          <option>UPI (Demo)</option>
+          <option>Debit / Credit Card (Demo)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn primary-btn">
+        Book Appointment & Confirm
+      </button>
+    </form>
+
+    <p class="small-note">
+      Note: This is a college project, so online payment is demo only. In real system, we will connect a proper payment gateway and backend.
+    </p>
+  </section>
+</main>
+
 
   <!-- Footer -->
   <footer class="footer">

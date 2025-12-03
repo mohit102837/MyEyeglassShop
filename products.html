@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,122 +9,444 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+
 <body class="product-page">
 
   <!-- ===== Header ===== -->
   <header id="main-header">
-  <div class="container">
-    <div class="logo">VISION <span>EXPERT</span></div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <!-- <a href="#gallery">Gallery</a> -->
-      <!-- <a href="#testimonials">Reviews</a> -->
-      <a href="contact.html">Contact</a>
-      <a href="cart.html" class="cart-link">
-  🛒 Cart <span id="cart-count">(0)</span>
-</a>
-    </nav>
-  </div>
-</header>
+    <div class="container">
+      <div class="logo">VISION <span>EXPERT</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <!-- <a href="#gallery">Gallery</a> -->
+        <!-- <a href="#testimonials">Reviews</a> -->
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">
+          🛒 Cart <span id="cart-count">(0)</span>
+        </a>
+      </nav>
+    </div>
+  </header>
 
   <!-- ===== Product Section ===== -->
   <section class="products">
-  <h2 class="section-title">Explore Our Eyewear Collection</h2>
+    <h2 class="section-title">Explore Our Eyewear Collection</h2>
 
-  <!-- Category Tabs -->
-  <div class="tabs">
-    <button class="tab active" onclick="filterProducts('all')">All</button>
-    <button class="tab" onclick="filterProducts('male')">Male</button>
-    <button class="tab" onclick="filterProducts('female')">Female</button>
-    <button class="tab" onclick="filterProducts('kids')">Kids</button>
-  </div>
-
-  <!-- Product Grid -->
-  <div class="product-grid">
-
-    <div class="product-card" data-category="male">
-      <img src="images/glass1.jpeg" alt="Black Frame" />
-      <h3>Stylish Black Frame (Male)</h3>
-      <p>₹1,299</p>
-      <button class="add-to-cart" data-id="101" data-name="Stylish Black Frame" data-price="1,299" data-img="images/glass1.jpeg">
-    Add to Cart
-  </button>
-      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
+    <!-- Category Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="filterProducts('all')">All</button>
+      <button class="tab" onclick="filterProducts('female')">Female</button>
+      <button class="tab" onclick="filterProducts('male')">Male</button>
+      <button class="tab" onclick="filterProducts('kids')">Kids</button>
     </div>
 
-    <div class="product-card" data-category="female">
-      <img src="images/glass2.jpeg" alt="Transparent Frame" />
-      <h3>Transparent Frame (Female)</h3>
-      <p>₹1,499</p>
-      <button class="add-to-cart" data-id="103" data-name="Transparent Frame (Female)" data-price="1,499" data-img="images/glass2.jpeg">
-    Add to Cart
-  </button>
-      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
-      
+    <!-- Product Grid -->
+    <div class="product-grid">
+      <!-- 1st M-->
+      <div class="product-card" data-category="male">
+        <img src="images/m1.png" alt="Black Frame" />
+        <h3>Stylish Black Frame (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="101" data-name="Stylish Black Frame" data-price="1299"
+          data-img="images/m1.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+
+      <!-- 2n M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m2.png" alt="Black Frame" />
+        <h3> Urban Hawk (Male) </h3>
+        <p>₹1,399</p>
+        <button class="add-to-cart" data-id="102" data-name="Urban Hawk" data-price="1399"
+          data-img="images/m2.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 3 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m3.png" alt="Black Frame" />
+        <h3>Titan Edge (Male)</h3>
+        <p>₹1,259</p>
+        <button class="add-to-cart" data-id="103" data-name="Titan Edge" data-price="1259"
+          data-img="images/m3.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 4 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m4.png" alt="Black Frame" />
+        <h3>Royal Forge (Male)</h3>
+        <p>₹1,199</p>
+        <button class="add-to-cart" data-id="104" data-name="Royal Forge" data-price="1199"
+          data-img="images/m4.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 5 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m5.png" alt="Black Frame" />
+        <h3>Iron Vista (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="105" data-name="Iron Vista" data-price="1299"
+          data-img="images/m5.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 6 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m6.png" alt="Black Frame" />
+        <h3>Neo Classic (Male)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="106" data-name="Neo Classic" data-price="1499"
+          data-img="images/m6.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 7 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m7.png" alt="Black Frame" />
+        <h3>Black Phoenix (Male)</h3>
+        <p>₹1,209</p>
+        <button class="add-to-cart" data-id="107" data-name="Black Phoenix" data-price="1209"
+          data-img="images/m7.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 8 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m8.png" alt="Black Frame" />
+        <h3>Steel Wave (Male)</h3>
+        <p>₹1,199</p>
+        <button class="add-to-cart" data-id="108" data-name="Steel Wave" data-price="1199"
+          data-img="images/m8.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 9 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m9.png" alt="Black Frame" />
+        <h3>Prime Commander (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="109" data-name="Prime Commander" data-price="1299"
+          data-img="images/m9.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 10 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m10.png" alt="Black Frame" />
+        <h3>Stylish Black Frame (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="110" data-name="Stylish Black Frame" data-price="1299"
+          data-img="images/m10.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 11 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m11.png" alt="Black Frame" />
+        <h3>Stylish Black Frame (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="111" data-name="Stylish Black Frame" data-price="1299"
+          data-img="images/m11.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- 12 M -->
+      <div class="product-card" data-category="male">
+        <img src="images/m12.png" alt="Black Frame" />
+        <h3>Stylish Black Frame (Male)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="112" data-name="Stylish Black Frame" data-price="1299"
+          data-img="images/m12.png">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Stylish Black Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+
+
+      <!-- f1 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f1.png" alt="Transparent Frame" />
+        <h3>Transparent Frame (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="113" data-name="Transparent Frame (Female)" data-price="1499"
+          data-img="images/f1">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f2 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f2.png" alt="Transparent Frame" />
+        <h3>Rosé Glow (Female)</h3>
+        <p>₹1,199</p>
+        <button class="add-to-cart" data-id="114" data-name="Rosé Glow (Female)" data-price="1199"
+          data-img="images/f2">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f3 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f3.png" alt="Lady Luxe" />
+        <h3>Lady Luxe (Female)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="115" data-name="Lady Luxe (Female)" data-price="1299"
+          data-img="images/f3">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f4 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f4.png" alt="Transparent Frame" />
+        <h3>Pearl Aura (Female)</h3>
+        <p>₹1,399</p>
+        <button class="add-to-cart" data-id="116" data-name="Pearl Aura (Female)" data-price="1399"
+          data-img="images/f4">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f5 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f5.png" alt="Transparent Frame" />
+        <h3>Velvet Rose (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="117" data-name="Velvet Rose (Female)" data-price="1499"
+          data-img="images/f5">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f6 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f6.png" alt="Transparent Frame" />
+        <h3>Moonlight Diva (Female)</h3>
+        <p>₹1,449</p>
+        <button class="add-to-cart" data-id="118" data-name="Moonlight Diva (Female)" data-price="1449"
+          data-img="images/f6">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f7 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f7.png" alt="Transparent Frame" />
+        <h3>Golden Iris (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="119" data-name="Golden Iris (Female)" data-price="1499"
+          data-img="images/f7">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f8 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f8.png" alt="Transparent Frame" />
+        <h3>Silk Blossom (Female)</h3>
+        <p>₹1,599</p>
+        <button class="add-to-cart" data-id="120" data-name="Silk Blossom (Female)" data-price="1599"
+          data-img="images/f9">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f9 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f9.png" alt="Transparent Frame" />
+        <h3>Transparent Frame (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="121" data-name="Transparent Frame (Female)" data-price="1499"
+          data-img="images/f9">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f10 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f10.png" alt="Transparent Frame" />
+        <h3>Transparent Frame (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="122" data-name="Transparent Frame (Female)" data-price="1499"
+          data-img="images/f10">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f11 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f11.png" alt="Transparent Frame" />
+        <h3>Transparent Frame (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="123" data-name="Transparent Frame (Female)" data-price="1499"
+          data-img="images/f11">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+      <!-- f12 -->
+      <div class="product-card" data-category="female">
+        <img src="images/f12.png" alt="Transparent Frame" />
+        <h3>Transparent Frame (Female)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart" data-id="124" data-name="Transparent Frame (Female)" data-price="1499"
+          data-img="images/f12">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Transparent Frame from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+
+      </div>
+
+      <!-- k1 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k1.png" alt="Kids Retro Frame" />
+        <h3>Retro Round Glass (Kids)</h3>
+        <p>₹1,099</p>
+        <button class="add-to-cart" data-id="125" data-name="Retro Round Glass (Kids)" data-price="1099"
+          data-img="images/k1">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k2 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k2.png" alt="Kids Retro Frame" />
+        <h3>Sunny Pop (Kids)</h3>
+        <p>₹1,199</p>
+        <button class="add-to-cart" data-id="126" data-name="Sunny Pop (Kids)" data-price="1199"
+          data-img="images/k2">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k3 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k3.png" alt="Kids Retro Frame" />
+        <h3>Bunny Specs (Kids)</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="127" data-name="Bunny Specs (Kids)" data-price="1299"
+          data-img="images/k3">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k4 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k4.png" alt="Kids Retro Frame" />
+        <h3>Choco Peek (Kids)</h3>
+        <p>₹999</p>
+        <button class="add-to-cart" data-id="128" data-name="Choco Peek (Kids)" data-price="999"
+          data-img="images/k4">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k5 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k5.png" alt="Kids Retro Frame" />
+        <h3>Tiny Twist (Kids)</h3>
+        <p>₹1,399</p>
+        <button class="add-to-cart" data-id="129" data-name="Tiny Twist (Kids)" data-price="1399"
+          data-img="images/k5">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k6 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k6.png" alt="Kids Retro Frame" />
+        <h3>Happy Eyes (Kids)</h3>
+        <p>₹1,399</p>
+        <button class="add-to-cart" data-id="130" data-name="Happy Eyes (Kids)" data-price="1399"
+          data-img="images/k6">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k7 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k7.png" alt="Kids Retro Frame" />
+        <h3>Magic Bugs (Kids)</h3>
+        <p>₹1,099</p>
+        <button class="add-to-cart" data-id="131" data-name="Magic Bugs (Kids)" data-price="1099"
+          data-img="images/k7">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+      <!-- k8 -->
+      <div class="product-card" data-category="kids">
+        <img src="images/k8.png" alt="Kids Retro Frame" />
+        <h3>Rainbow Wink (Kids)</h3>
+        <p>₹1,099</p>
+        <button class="add-to-cart" data-id="132" data-name="Rainbow Wink (Kids)" data-price="1099"
+          data-img="images/k8">
+          Add to Cart
+        </button>
+        <!-- <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a> -->
+      </div>
+
+
+
+
+
     </div>
+  </section>
 
-    <div class="product-card" data-category="kids">
-      <img src="images/glass3.jpeg" alt="Kids Retro Frame" />
-      <h3>Retro Round Glass (Kids)</h3>
-      <p>₹1,099</p>
-      <button class="add-to-cart" data-id="104" data-name="Retro Round Glass (Kids)" data-price="1,099" data-img="images/glass2.jpeg">
-    Add to Cart
-  </button>
-      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Retro Round Glass from Vision Expert" target="_blank">Order on WhatsApp</a>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>VISION EXPERT</h3>
+      <p>Your Trusted Eyewear Partner</p>
+
+      <div class="footer-info">
+        <p><strong>Address:</strong> 12 Main Market, Lajpat Nagar, New Delhi - 110024</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> support@visionexpert.in</p>
+        <p><strong>Timings:</strong> Mon-Sat | 10:00 AM - 8:00 PM</p>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 VISION EXPERT. All Rights Reserved.
+      </p>
     </div>
-
-    <!-- More examples -->
-    <div class="product-card" data-category="male">
-      <img src="images/glass2.jpeg" alt="Brown Male Frame" />
-      <h3>Classic Brown Frame</h3>
-      <p>₹1,399</p>
-      <button class="add-to-cart" data-id="105" data-name="Classic Brown Frame" data-price="1,399" data-img="images/glass2.jpeg">
-    Add to Cart
-  </button>
-      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Classic Brown Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
-    </div>
-
-    <div class="product-card" data-category="female">
-      <img src="images/glass3.jpeg" alt="Pink Female Frame" />
-      <h3>Elegant Pink Frame</h3>
-      <p>₹1,599</p>
-      <button class="add-to-cart" data-id="105" data-name="Elegant Pink Frame" data-price="1,599" data-img="images/glass2.jpeg">
-    Add to Cart
-  </button>
-      <a class="btn whatsapp" href="https://wa.me/918923405185?text=Hi, I want to order Elegant Pink Frame from Vision Expert" target="_blank">Order on WhatsApp</a>
-    </div>
-
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="footer-content">
-    <h3>VISION EXPERT</h3>
-    <p>Your Trusted Eyewear Partner</p>
-
-    <div class="footer-info">
-      <p><strong>Address:</strong> 12 Main Market, Lajpat Nagar, New Delhi - 110024</p>
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> support@visionexpert.in</p>
-      <p><strong>Timings:</strong> Mon-Sat | 10:00 AM - 8:00 PM</p>
-    </div>
-
-    <div class="social-links">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-    <p class="copyright">
-      &copy; 2025 VISION EXPERT. All Rights Reserved.
-    </p>
-  </div>
-</footer>
+  </footer>
 
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
